@@ -5,7 +5,7 @@
   "main": "index.html",
   "scripts": {
     "start": "parcel index.html --open --out-dir docs",
-    "build": "parcel build index.html --out-dir docs"
+    "build": "parcel build index.html --out-dir docs --public-url https://darkruby.co.uk/sudoku-solver/"
   },
   "dependencies": {},
   "devDependencies": {

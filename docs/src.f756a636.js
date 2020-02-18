@@ -3,4 +3,4 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 },{}],"B6dB":[function(require,module,exports) {
 "use strict";Object.defineProperty(exports,"__esModule",{value:!0});var e=require("./sudoku"),n=function(e){return e?e.reduce(function(e,n,t){return e+" "+(n.val||"_")+((t+1)%9==0?"\n":"")},""):"no solution"},t=[5,3,0,0,7,0,0,0,0,6,0,0,1,9,5,0,0,0,0,9,8,0,0,0,0,6,0,8,0,0,0,6,0,0,0,3,4,0,0,8,0,3,0,0,1,7,0,0,0,2,0,0,0,6,0,6,0,0,0,0,2,8,0,0,0,0,4,1,9,0,0,5,0,0,0,0,8,0,0,7,9].map(function(e){return{val:e,fixed:!!e}}),u=[9,0,0,0,0,5,0,4,0,0,0,0,0,8,0,2,1,0,0,0,0,9,0,0,7,0,3,0,0,0,1,0,0,5,0,0,3,0,0,2,5,6,0,0,7,0,0,7,0,0,9,0,0,0,1,0,6,0,0,7,0,0,0,0,7,8,0,1,0,0,0,0,0,9,0,5,0,0,0,0,8].map(function(e){return{val:e,fixed:!!e}});!function(t){document.getElementById("app").innerHTML=n(t),document.getElementById("run").onclick=function(){var u=e.solve(t);document.getElementById("app").innerHTML=n(u)}}(u);
 },{"./sudoku":"hc0O"}]},{},["B6dB"], null)
-//# sourceMappingURL=/src.f756a636.js.map
+//# sourceMappingURL=https://darkruby.co.uk/sudoku-solver/src.f756a636.js.map
