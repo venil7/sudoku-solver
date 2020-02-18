@@ -1,0 +1,23 @@
+.cell {
+  span,
+  input {
+    display: inline-block;
+    max-width: 15px;
+    min-width: 15px;
+    &:hover {
+      background-color: grey;
+      cursor: pointer;
+    }
+  }
+  &.set {
+    background-color: Beige;
+  }
+}
+
+.field {
+  width: 15 * 9px;
+  height: 18 * 9px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}

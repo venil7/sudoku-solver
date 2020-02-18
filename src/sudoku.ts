@@ -2,7 +2,7 @@ type Cell = { val: number; fixed: boolean };
 export type Sudoku = Cell[];
 type Row = [...number[]] & { length: 9 };
 
-const copy = (sudoku: Sudoku): Sudoku =>
+export const copy = (sudoku: Sudoku): Sudoku =>
   sudoku.map(({ val, fixed }) => ({ val, fixed }));
 
 const get = (sudoku: Sudoku) => (row: number, col: number): Cell => {
@@ -98,3 +98,9 @@ export const solve = (
   }
   return null;
 };
+
+export const empty = (): Sudoku =>
+  Array.from(Array(81)).map(_ => ({ val: 0, fixed: false }));
+
+export const crystalize = (sudoku: Sudoku): Sudoku =>
+  sudoku.map(({ val }) => ({ val, fixed: !!val }));

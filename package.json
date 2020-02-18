@@ -7,9 +7,15 @@
     "start": "parcel index.html --open --out-dir docs",
     "build": "parcel build index.html --out-dir docs --public-url https://darkruby.co.uk/sudoku-solver/"
   },
-  "dependencies": {},
+  "dependencies": {
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
+  },
   "devDependencies": {
+    "@types/react": "^16.9.20",
+    "@types/react-dom": "^16.9.5",
     "parcel-bundler": "^1.6.1",
+    "sass": "^1.25.0",
     "typescript": "^3.7.5"
   },
   "keywords": []
